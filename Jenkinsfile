@@ -23,7 +23,7 @@ pipeline {
                     sh '''
                     node index.js &
                     sleep 5
-                    pkill node
+                    pkill node || true
                     '''
                 }
             }
